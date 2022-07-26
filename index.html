@@ -17,24 +17,30 @@
         <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, laboriosam. Ab obcaecati saepe et suscipit eius autem ut reiciendis earum architecto, repellat magnam asperiores hic voluptatum alias minima magni aperiam.
         </article>
         <h3>Let's go and create a journey with us!</h3>
-        <fieldset>
+        <form method="post" action="#">
             <legend>Sign Up</legend>
-            <label for="FN">FIRST NAME</label>
-            <input type="text" name="FN" id="FN" pattern="^[a-z\d\.]{5,}$"required>
-            <label for="LN">LAST NAME</label>
-            <input type="text" name="FN" id="FN" pattern="^[a-z\d\.]{5,}$" required>
-            <label for="'email">EMAIL</label>
-            <input type="email" name="email" id="email" required>
-            <label for="phone">PHONE</label>
-            <input type="tel" name="phone" id="phone" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}
-            ">
-            <label for="pass">PASSWORD</label>
-            <input type="password" name="pass" id="pass" minlength="8" required>
-            <label for="confirmpass">CONFIRM PASSWORD </label>
-            <input type="password" name="confirmpass" id="confirmpass" min="8" required>
+            <div class="inputcontainer">
+                <div class="col1">
+                    <label for="FN">FIRST NAME</label>
+                    <input type="text" name="FN" id="FN" pattern="^[a-z\d\.]{5,}$"required>
+                    <label for="'email">EMAIL</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="pass">PASSWORD</label>
+                    <input type="password" name="pass" id="pass" minlength="8" required>
+                </div>
+    
+                <div class="col2">
+                    <label for="LN">LAST NAME</label>
+                    <input type="text" name="FN" id="FN" pattern="^[a-z\d\.]{5,}$" required>
+                    <label for="phone">PHONE</label>
+                    <input type="tel" name="phone" id="phone" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}">
+                    <label for="confirmpass">CONFIRM PASSWORD </label>
+                    <input type="password" name="confirmpass" id="confirmpass" min="8" required>
+                </div>
+            </div>
 
             <button type="submit">Sign Up</button>
-        </fieldset>
+        </form>
         <p> Already a member? <a href="#">Sign-in.</a></p>
     </div>
 
